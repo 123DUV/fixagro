@@ -42,7 +42,7 @@ export default function InfoPubli (){
             <div class="card mb-3">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="assets/img/card.jpg" class="img-fluid rounded-start" alt="..."/>
+                  <img src="../assets/img/card.jpg" class="img-fluid rounded-start" alt="..."/>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -60,7 +60,7 @@ export default function InfoPubli (){
   
         
             <div class="card">
-              <img src="assets/img/card.jpg" class="card-img-top" alt="..."/>
+              <img src="../assets/img/card.jpg" class="card-img-top" alt="..."/>
               <div class="card-body">
                 <h5 class="card-title">Card with an image on top</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -75,7 +75,7 @@ export default function InfoPubli (){
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                   content.</p>
               </div>
-              <img src="assets/img/card.jpg" class="card-img-bottom" alt="..."/>
+              <img src="../assets/img/card.jpg" class="card-img-bottom" alt="..."/>
             </div>
   
           </div>
@@ -84,7 +84,7 @@ export default function InfoPubli (){
   
            
             <div class="card">
-              <img src="assets/img/card.jpg" class="card-img-top" alt="..."/>
+              <img src="../assets/img/card.jpg" class="card-img-top" alt="..."/>
               <div class="card-img-overlay">
                 <h5 class="card-title">Card with an image overlay</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
