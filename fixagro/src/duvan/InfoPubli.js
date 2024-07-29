@@ -2,43 +2,35 @@ import React from 'react';
 import '../duvan/InfoPubli.css';
 import cardImage from '../assets/img/card.jpg';
 import Icon from '../assets/img/icono.png';
+import Icon2 from '../assets/img/icono2.png';
 
 export default function InfoPubli() {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img src={Icon} style={{ width: '150px', height:'80px' }} ></img>
+        <div className='m-0 p-0'>
+        <img src={Icon} style={{ width: '120  px', height: '80px' }} ></img>
+         <span className='fs-4 fw-bold'>FixAgro</span>
+        </div>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
+        <div className="collapse navbar-collapse d-flex justify-content-center align-items-center "   id="navbarSupportedContent">
+        
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-            
+            <input className="form-control  col-10 col-md-8 col-lg-6" type="search" placeholder="Search" aria-label="Search" />
+
           </form>
         </div>
       </nav>
-      <div className="row align-items-top">
-        <div className="col-lg-11">
+      <div className="row align-items-top " >
+        <div className="col-lg-12">
           <div className="card mb-3 p-5 mt-5">
             <div className="row g-0">
               <div className="col-md-4 justify-content-center items-align-center">
-                <img src={cardImage} className="img-fluid rounded-start" alt="..." />
+                <img src={cardImage} className="img-fluid rounded col-md-5  col-9 col-sm-7 col-md-10 col-lg-10 col-xl-12 position-relative" alt="..." />
               </div>
               <div className="col-md-8">
                 <div className="card-body">
@@ -46,36 +38,37 @@ export default function InfoPubli() {
                   <p className="card-text">Modelo: <span className='ms-4'>n/a</span></p>
                   <p className="card-text">Marca: <span className='ms-4'>n/a</span></p>
                   <button className='btn btn-success m-4'>Crear Publicación</button>
-                  <button className='btn btn-success'>Historial</button>
+                  <button className='btn btn-success m-4'>Historial</button>
                 </div>
               </div>
-              <div className='container m-5'>
-                <div className='row'>
-                  <div className='col-md-11 position-relative'>
-                    <div className='text-white shadow rounded bg-secondary position-relative p-3'>
-                      <h5 className="card-title p-2 px-5 text-black">Publicación en curso </h5>
-                      <div className='border m-3 bg-light position-relative col-md-5 rounded'>
-                        <h5 className='text-black p-2'>14/06/2024</h5>
-                        <p className='text-black p-2'>Se daño la cadena a la guadaña, la cambie y no encendio más</p>
-                        <button className='btn btn-success m-3 p-2 px-5'>
-                          <i className="bi bi-pen"></i>
+              <div class="container m-5">
+                <div class="row">
+                  <div class="col-md-6 col-lg-6 mb-3">
+                    <div class="text-white shadow rounded bg-secondary p-3">
+                      <h5 class="card-title px-3 text-black">Publicación en curso</h5>
+                      <div class="border m-3 bg-light rounded p-3">
+                        <h5 class="text-black">14/06/2024</h5>
+                        <p class="text-black">Se daño la cadena a la guadaña, la cambie y no encendio más</p>
+                        <button class="btn btn-success m-1 p-2 px-4">
+                          <i class="bi bi-pen"></i>
                         </button>
-                        <button className='btn btn-success p-2 px-5'>
-                          <i className="bi bi-journal-text"></i>
+                        <button class="btn btn-success m-1 p-2 px-4">
+                          <i class="bi bi-journal-text"></i>
                         </button>
                       </div>
-                      <div className='position-absolute top-0 end-0 ms-5 col-md-5 p-3'>
-                        <h5 className="card-title p-2 px-5 text-black">Solicitudes de técnicos</h5>
-                        <div className='border m-3 bg-light rounded position-relative rounded'>
-                          <h5 className='text-black p-2'>Chats</h5>
-                          <p className='text-black p-2'>Tienes 5 notificaciones</p>
-                          <button className='btn btn-success m-3 p-2 px-5'>
-                            Ir a chats
-                          </button>
-                          
-                        </div>
-                      </div>
+                    </div>
+                  </div>
 
+                  <div class="col-md-6 col-lg-6 mb-3">
+                    <div class="text-white shadow rounded bg-secondary p-3">
+                      <h5 class="card-title px-3 text-black">Solicitudes de técnicos</h5>
+                      <div class="border m-3 bg-light rounded p-3">
+                        <h5 class="text-black">Chats</h5>
+                        <p class="text-black">Tienes 5 chats pendientes</p>
+                        <button class="btn btn-success m-1 p-2 px-4">
+                          <i class="bi bi-pen"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
