@@ -1,28 +1,36 @@
 import React from 'react';
-import '../duvan/InfoPubli.css';
+
 import cardImage from '../assets/img/card.jpg';
 import Icon from '../assets/img/icono.png';
 import Icon2 from '../assets/img/icono2.png';
+import noti from '../assets/img/noti.png';
+import logosenior from '../assets/img/logosenior.png';
+import { Link } from 'react-router-dom';
+
 
 export default function InfoPubli() {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div className='m-0 p-0'>
-        <img src={Icon} style={{ width: '120  px', height: '80px' }} ></img>
-         <span className='fs-4 fw-bold'>FixAgro</span>
-        </div>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div className="collapse navbar-collapse d-flex justify-content-center align-items-center "   id="navbarSupportedContent">
-        
-          <form class="form-inline my-2 my-lg-0">
-            <input className="form-control  col-10 col-md-8 col-lg-6" type="search" placeholder="Search" aria-label="Search" />
+      <nav className="navbar navbar-expand-lg navbar-light bg-success">
+        <div className="container-fluid">
+          <div className="d-flex align-items-center col-lg-3">
+            <img src={Icon} style={{ width: '120px', height: '80px' }} alt="Icon" />
+            <span className="fs-4 fw-bold p-3">FixAgro</span>
+          </div>
 
-          </form>
+          
+
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <form className="d-flex w-100 mt-2 mt-lg-0 col-sm-3">
+              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            </form>
+          </div>
+
+          <div className="d-flex align-items-center col-lg-3">
+            <i className="bi bi-bell fs-2 me-3"></i>
+            <img src={logosenior} style={{ width: '120px', height: '80px' }} alt="Logo Senior" />
+          </div>
         </div>
       </nav>
       <div className="row align-items-top " >
@@ -37,7 +45,29 @@ export default function InfoPubli() {
                   <h5 className="card-title">Tipo de maquina: <span className='ms-4'>Secadora</span></h5>
                   <p className="card-text">Modelo: <span className='ms-4'>n/a</span></p>
                   <p className="card-text">Marca: <span className='ms-4'>n/a</span></p>
-                  <button className='btn btn-success m-4'>Crear Publicación</button>
+
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Crear Publicación
+                  </button>
+
+
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Descripción</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <input type='text' placeholder='¿Tienes algún problema con tu maquina?' className='form-control py-3 mb-3'></input>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Guardar Cambios</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <button className='btn btn-success m-4'>Historial</button>
                 </div>
               </div>
