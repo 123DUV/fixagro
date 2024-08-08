@@ -5,6 +5,10 @@ import Icon from '../assets/img/icono.png';
 import Icon2 from '../assets/img/icono2.png';
 import noti from '../assets/img/noti.png';
 import logosenior from '../assets/img/logosenior.png';
+import messages from "../assets/img/messages-3.jpg";
+import messages2 from "../assets/img/messages-2.jpg"
+import messages3 from "../assets/img/messages-1.jpg"
+import logo from "../assets/img/icono.png"
 import { Link } from 'react-router-dom';
 import '../assets/css/style.css';
 
@@ -12,20 +16,19 @@ import '../assets/css/style.css';
 export default function InfoPubli() {
   return (
     <div>
-      <header id="header" class="fixed-top d-flex align-items-center">
-
-        <div class="d-flex align-items-center justify-content-between">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <img src="../assets/img/logo.png" alt="" />
-            <span class="d-none d-lg-block">FixAgro</span>
+      <header id="header" class="fixed-top d-flex align-items-center p-2 bg-success" >
+        <div class="d-flex bg-light m-2  ">
+          <a href="index.html" class="logo d-flex align-items-center ">
+            <img src={logo} alt="" class="img-fluid h-100 " />
+            <img src={Icon2} alt="" class="img-fluid  " />
           </a>
-          
         </div>
 
-        <div class="search-bar">
+        <div class="search-bar col-md-6">
           <form class="search-form d-flex align-items-center" method="POST" action="#">
-            <input type="text" name="query" placeholder="Search" title="Enter search keyword" />
-            <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+            
+            <input type="search" name="query" placeholder="Search" title="Enter search keyword" className='form-control rounded w-100'/>
+
           </form>
         </div>
 
@@ -131,7 +134,7 @@ export default function InfoPubli() {
 
                 <li class="message-item">
                   <a href="#">
-                    <img src="../assets/img/messages-1.jpg" alt="" class="rounded-circle" />
+                    <img src={messages3} alt="" class="rounded-circle" />
                     <div>
                       <h4>Maria Hudson</h4>
                       <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -145,7 +148,7 @@ export default function InfoPubli() {
 
                 <li class="message-item">
                   <a href="#">
-                    <img src="../assets/img/messages-2.jpg" alt="" class="rounded-circle" />
+                    <img src={messages2} alt="" class="rounded-circle" />
                     <div>
                       <h4>Anna Nelson</h4>
                       <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -159,7 +162,7 @@ export default function InfoPubli() {
 
                 <li class="message-item">
                   <a href="#">
-                    <img src="../assets/img/messages-3.jpg" alt="" class="rounded-circle" />
+                    <img src={messages} alt="" class="rounded-circle" />
                     <div>
                       <h4>David Muldon</h4>
                       <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -182,8 +185,8 @@ export default function InfoPubli() {
             <li class="nav-item dropdown pe-3">
 
               <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                <img src="../assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" />
-                <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+                <img src={logosenior} class="rounded-circle img-fluid w-40" />
+
               </a>
 
               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
