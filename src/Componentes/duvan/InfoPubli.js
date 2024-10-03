@@ -4,7 +4,7 @@ import { useState } from 'react';
 import cardImage from "../img/card.jpg";
 import { Modal, Button } from 'react-bootstrap';
 
-
+//hola
 
 export default function InfoPubli() {
 
