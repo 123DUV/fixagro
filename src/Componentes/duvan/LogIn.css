@@ -1,5 +1,5 @@
+/* Estilos generales */
 .background {
-
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -8,136 +8,174 @@
 
 .center {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .info {
     position: relative;
-    left: 4%; 
+    left: 4%;
     width: 80%;
-    max-width: 35%; 
-    height: 100vh; 
+    max-width: 35%;
+    height: 90vh;
     background: rgb(197, 193, 193);
     border-radius: 10px;
     align-items: center;
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 20px;
+    margin-top: 3%;
 }
 
-.pading{
+.pading {
     margin-top: 6vh;
 }
+
 .centerInfo {
     position: relative;
-    padding: 10px; 
+    padding: 10px;
     left: 12%;
     top: 12%;
     width: 80%;
-    
 }
 
 .buttonCenter {
     margin-top: 15px;
     background-color: #A4BF00;
+   
 }
 
-
-.footerLogin{
+.footerLogin {
     text-align: center;
-    text-decoration: none;
 }
 
-@media (max-width: 576px) {
-    .center {
-        flex-direction: column;
-        top: 10%;
-         
-    }
-
-    .info {
-        width: 60%; 
-        margin-bottom: 10px; 
-    }
-
-    .buttonCenter {
-        width: 100%; 
-    }
-}
-@media (min-width: 576px) {
-    .center {
-        flex-direction: column; 
-        
-        
-    }
-
+/* Estilos responsivos */
+@media (max-width: 480px) {
     .info {
         width: 90%;
-        margin-bottom: 10px;
+        max-width: none;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .centerInfo {
+        padding: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
     }
 
     .buttonCenter {
         width: 100%;
-    }
-}
-
-@media (min-width: 768px) {
-    .center {
-        flex-direction: column; 
-       
-        left: 10%; 
+        margin-top: 5vh;
     }
 
-    .info {
-        width: 90%; 
+    .imagen {
+        
+        
+        width: 300px;
         margin-bottom: 20px;
     }
 
-    .buttonCenter {
-        width: 100%; 
+    h4 {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 14px;
     }
 }
 
-@media (min-width: 992px) {
-   
+@media (max-width: 768px) {
     .center {
-        flex-direction: row; 
-       
-        width: 90%;
+        flex-direction: row;
     }
 
     .info {
-        width: 90%; 
-        margin-bottom: 10px;
-    }
-
-    .buttonCenter {
-        width: 100%; 
-    }
-}
-@media (min-width: 1200px) {
-    .center {
-        flex-direction: row; 
+        max-width: 90%;
+        height: auto;
+        padding: 15px;
+        left: 0;
+        margin-top: 20px;
         
-        width: 100%;
-        left: 2%;
-    }
-    .img{
-        position: relative;
-        height: 100vh;
     }
 
-    .info {
+    .centerInfo {
+        left: 0;
+        top: 0;
         width: 100%;
-        margin-bottom: 10px;
     }
 
     .buttonCenter {
-        width: 100%; 
+        width: 100%;
+        
+    }
+
+    .pading {
+        margin-top: 2vh;
     }
 }
+@media (min-width: 768px) {
+    .center {
+        flex-direction: row;
+    }
+
+    .info {
+        max-width: 90%;
+        height: auto;
+        padding: 15px;
+        left: 0;
+        margin-top: 20px;
+        
+    }
+
+    .centerInfo {
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .buttonCenter {
+        width: 100%;
+        
+    }
+
+    .pading {
+        margin-top: 2vh;
+    }
+}
+@media (min-width: 1024px) {
+    .center {
+        flex-direction: row;
+    }
+
+    .info {
+        max-width: 100vh;
+        height: auto;
+        padding: 5px;
+        left: 0;
+        margin-top: 20px;
+        
+    }
+
+    .centerInfo {
+        left: 0;
+        top: 0;
+        width: 100vh;
+    }
+
+    .buttonCenter {
+        width: 100%;
+        
+    }
+
+    .pading {
+        margin-top: 2vh;
+    }
+}
+
+
 

@@ -1,15 +1,15 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import Logo1 from '../img/Logo1.jpeg';
+import Logo1 from '../img/Logo1.png';
 import "./LogIn.css";
 import { Link } from 'react-router-dom';
 
 export default function login() {
     return (
         <div className='background '>
-            <div className='center col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12'>
+            <div className='center '>
                 <div className='img'>
-                    <img src={Logo1} style={{ height: "100vh", width: "90%"}}></img>
+                    <img src={Logo1}  className='imagen'></img>
                 </div>
                 <div className='form-group  info'>
                     <div className='centerInfo'>
