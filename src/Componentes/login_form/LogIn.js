@@ -6,9 +6,10 @@ import { Link } from 'react-router-dom';
 
 export default function login() {
     return (
+        
         <div className='background '>
             <div className='center '>
-                <div className='img'>
+                <div className='img '>
                     <img src={Logo1}  className='imagen'></img>
                 </div>
                 <div className='form-group  info'>

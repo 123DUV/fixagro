@@ -1,4 +1,4 @@
-import "./styles2.css";
+import "./styleCliente.css";
 
 export default function formularioCliente(){
     return (

@@ -1,4 +1,4 @@
-import "./style3.css";
+import "./styleTecnico.css";
 
 export default function formularioTecnico() {
     return (

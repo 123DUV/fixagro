@@ -8,6 +8,7 @@ import Home from "./Componentes/login_form/LogIn";
 
 import ClienteForm from "./Componentes/login_form/formularioCliente";
 import TecnicoForm from "./Componentes/login_form/formularioTecnico";
+import EleccionUsuario from './Componentes/login_form/eleccionUsuario';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <HashRouter>
       <Routes>
         <Route exact path='/' element={<Home/>}/>
+        <Route exact path='/eleccionusuario' element={<EleccionUsuario/>}/>
         <Route exact path='/formulariocliente' element={<ClienteForm/>}/>
         <Route exact path='/formulariotecnico' element={<TecnicoForm/>}/>
         <Route exact path='/infopubli' element={<Header/>} />

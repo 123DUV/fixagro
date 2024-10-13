@@ -1,0 +1,56 @@
+.backgroundE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #f8f9fa; 
+}
+
+.centerE {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.imgE {
+    margin-bottom: 20px; 
+}
+
+.imagenE {
+    position: relative;
+    margin-top: -3vh;
+    max-width: 100%; 
+    height: 50vh;
+}
+
+.botones {
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+}
+
+button {
+    width: 20vh; 
+    height: 10vh; 
+}
+
+@media (max-width: 768px) {
+    .botones {
+        flex-direction: row; 
+    }
+
+    button {
+        width: 100%; 
+    }
+}
+@media (max-width: 1024px) {
+    .botones {
+        flex-direction: row; 
+    }
+
+    button {
+        width: 100%;
+      
+    }
+}

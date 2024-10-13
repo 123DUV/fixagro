@@ -1,5 +1,8 @@
 /* Estilos generales */
+
+
 .background {
+   
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -7,12 +10,14 @@
 }
 
 .center {
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
     flex-wrap: wrap;
+    
 }
 
 .info {
@@ -206,8 +211,10 @@
     }
 }
 @media (min-width: 1200px) {
+    
     .center {
         flex-direction: row;
+        
     }
 
     .info {
@@ -234,6 +241,7 @@
         margin-top: 2vh;
     }
 }
+
 
 
 
