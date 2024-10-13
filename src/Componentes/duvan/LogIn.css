@@ -176,6 +176,35 @@
         margin-top: 2vh;
     }
 }
+@media (min-width: 992px) {
+    .center {
+        flex-direction: row;
+    }
+
+    .info {
+        max-width: 70vh;
+        height: 70vh;
+        padding: 5px;
+        left: 0;
+        margin-top: 80px;
+        
+    }
+
+    .centerInfo {
+        left: 0;
+        top: 0;
+        width: 70vh;
+    }
+
+    .buttonCenter {
+        width: 100%;
+        
+    }
+
+    .pading {
+        margin-top: 2vh;
+    }
+}
 @media (min-width: 1200px) {
     .center {
         flex-direction: row;
