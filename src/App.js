@@ -1,13 +1,13 @@
 import './App.css';
 import Header from './Componentes/Header/header';
-import InfoPubli from './Componentes/duvan/InfoPubli'
+import InfoPubli from './Componentes/infoMaquiCliente/InfoPubli'
 
 import { Routes, Route, HashRouter } from "react-router-dom"
-import Ventanita from "./Componentes/duvan/ventanita"
-import Home from "./Componentes/duvan/LogIn";
-import registrarse from "./Componentes/duvan/registrarse";
-import ClienteForm from "./Componentes/santiago/formularioCliente";
-import TecnicoForm from "./Componentes/santiago/formularioTecnico";
+import Ventanita from "./Componentes/infoMaquiCliente/ventanita"
+import Home from "./Componentes/login_form/LogIn";
+
+import ClienteForm from "./Componentes/login_form/formularioCliente";
+import TecnicoForm from "./Componentes/login_form/formularioTecnico";
 
 
 function App() {

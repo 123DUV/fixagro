@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css';
-import InfoPubli from "../duvan/InfoPubli.js";
+import InfoPubli from "../infoMaquiCliente/InfoPubli.js";
 
 export default function Header() {
     return (
